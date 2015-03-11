@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cityNameTextView"
+        android:text="asd"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:layout_marginTop="4dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/temperatureLayout"
+        android:showDividers="none"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:text="Temperature"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/temperatureLabel"
+            android:textStyle="bold" />
+        <TextView
+            android:text="0°C"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/temperatureText"
+            android:layout_marginLeft="8dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/humidityLayout"
+        android:gravity="center"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:text="Humidity"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/humidityLabel"
+            android:textStyle="bold" />
+        <TextView
+            android:text="0%"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/humidityText"
+            android:layout_marginLeft="8dp" />
+    </LinearLayout>
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="150.1dp"
+        android:id="@+id/weatherImageView"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter" />
+    <Button
+        android:id="@+id/refreshButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Refresh Weather"
+        android:layout_marginTop="4dp" />
+</LinearLayout>
